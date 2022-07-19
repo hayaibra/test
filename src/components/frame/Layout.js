@@ -6,10 +6,9 @@ import { FrameBox } from "./Style";
 
 export const Layout = () => {
   return (
-    <FrameBox direction="row" spacing={2}>
+    <FrameBox direction="row" sx={{ width: "715px", height: "768px" }}>
       <Sidebar />
       <Feed />
-      <Rightbar />
     </FrameBox>
   );
 };

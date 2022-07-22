@@ -1,7 +1,10 @@
 import React from "react";
-import { Layout } from "./components/frame/Layout";
 import { CssBaseline } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Layout from "./components/layout/Layout";
+import { LocalizationProvider } from "@mui/lab";
+import AdapterDateFns from "@mui/lab/AdapterDateFns";
+import "./App.css";
 
 const outertheme = createTheme({
   palette: {
@@ -16,6 +19,10 @@ const outertheme = createTheme({
     thirdcolor: {
       main: "#BF953F",
     },
+    othercolor: {
+      main: "#f5efe2b5",
+    },
+    spacing: "0",
   },
 });
 

@@ -17,13 +17,13 @@ const NavbarGroup = () => {
         </IconBox>
         <NavTitleDashboard>Dashboard</NavTitleDashboard>
       </NavBox>
-      <NavBox sx={{ top: "53px" }}>
+      <NavBox>
         <IconBox>
           <img src={require("../../../images/Activity.png")} alt="activity" />
         </IconBox>
         <NavTitle>Reports</NavTitle>
       </NavBox>
-      <NavBox sx={{ top: "106px" }}>
+      <NavBox>
         <IconBox>
           <img src={require("../../../images/Bag 2.png")} alt="bag-2" />
         </IconBox>

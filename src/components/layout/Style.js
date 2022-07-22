@@ -1,4 +1,4 @@
-import { Stack, styled, Box } from "@mui/material";
+import { styled, Box } from "@mui/material";
 
 export const LayoutBox = styled(Box)(({ theme }) => ({
   display: "flex",

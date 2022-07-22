@@ -1,7 +1,6 @@
-import { AppBar, Avatar, Box, Stack } from "@mui/material";
+import { AppBar, Avatar, Box } from "@mui/material";
 import React, { useState } from "react";
 import NavbarGroup from "../sidebar/navbargroup/NavbarGroup";
-import Sidebar from "../sidebar/Sidebar";
 import {
   SidebarContent,
   SignBox,
@@ -45,6 +44,7 @@ const Appbar = () => {
             width="30px"
             height="30px"
             style={{ marginRight: "10px" }}
+            alt="alert"
           />
           <Avatar sx={{ bgcolor: "#D9D9D9", width: "40px", height: "40px" }} />
         </Box>
@@ -59,7 +59,7 @@ const Appbar = () => {
             <NavbarGroup sx={{ marginBottom: "200px" }} />
             <SignBox sx={{ marginBottom: "30px" }}>
               <SignImageBox>
-                <img src={require("../../images/Vector.png")} />
+                <img src={require("../../images/Vector.png")} alt="vector" />
               </SignImageBox>
               <SignTitle>Sign out</SignTitle>
             </SignBox>

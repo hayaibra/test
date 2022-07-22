@@ -1,4 +1,4 @@
-import { Avatar, Box, Stack, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import {
   Alert,
   AlertBox,
@@ -25,6 +25,7 @@ const Rightbar = () => {
           <Alert>
             <img
               src={require("../../images/notification-alert-svgrepo-com.png")}
+              alt="alert"
             />
           </Alert>
           <UserBox />

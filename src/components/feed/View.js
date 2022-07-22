@@ -82,7 +82,7 @@ const View = () => {
                 <PercentageBox>
                   <PercenteNumber>+22%</PercenteNumber>
                   <UpIcon>
-                    <img src={require("../../images/Shape.png")} />
+                    <img src={require("../../images/Shape.png")} alt="shape" />
                   </UpIcon>
                 </PercentageBox>
               </EarningBoxContent>
@@ -97,6 +97,7 @@ const View = () => {
                 <img
                   src={require("../../images/Ellipse 116.png")}
                   style={{ position: "absolute", top: "43px", right: "29px" }}
+                  alt="ellipse"
                 />
               </CFBox>
             </EarningBox>
@@ -118,7 +119,10 @@ const View = () => {
               <ChartThree>
                 <Mark>
                   <Ellipse>
-                    <img src={require("../../images/Ellipse 858.png")} />
+                    <img
+                      src={require("../../images/Ellipse 858.png")}
+                      alt="ellipse"
+                    />
                   </Ellipse>
                   <Union src={require("../../images/Union.png")} />
                   <MarkValue>$ 2.600</MarkValue>

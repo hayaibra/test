@@ -7,8 +7,6 @@ export const FeedBox = styled("div")(({ theme }) => ({
   flexDirection: "row",
   alignItems: "center",
   flex: 6,
-  // width: { xs: "100%" },
-  // backgroundColor: "#f5efe2",
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
     width: "100%",
@@ -42,6 +40,7 @@ export const FirstBoxContent = styled(Box)(({ theme }) => ({
 }));
 
 export const Boxy = styled(Box)(({ theme }) => ({
+  padding: "34px 0 0 0",
   [theme.breakpoints.only("xs")]: {
     width: "86%",
     position: "absolute",
@@ -54,6 +53,16 @@ export const AnalisticContent = styled(Box)(({ theme }) => ({
     width: "100%",
     position: "absolute",
     top: "43%",
+  },
+}));
+
+export const StatisticBox = styled(Box)(({ theme }) => ({
+  display: "flex",
+  marginTop: "19px",
+  paddingLeft: "5px",
+  flexDirection: "row",
+  [theme.breakpoints.only("xs")]: {
+    flexDirection: "column",
   },
 }));
 
@@ -90,9 +99,6 @@ export const UpComingBox = styled(Box)(({ theme }) => ({
 export const TitleUpComing = styled(Box)({
   width: "90.17px",
   height: "34px",
-  // position: "absolute",
-  // top: "10px",
-  // left: "15.84px",
   fontFamily: "Poppins",
   fontStyle: "normal",
   fontWeight: 500,
@@ -104,9 +110,6 @@ export const TitleUpComing = styled(Box)({
 export const NumberBox = styled(Box)({
   width: "56.05px",
   height: "24px",
-  // position: "absolute",
-  // left: "18.93px",
-  // bottom: "20px",
   fontFamily: "Poppins",
   fontWeight: 700,
   fontSize: "24px",
@@ -133,9 +136,6 @@ export const EllipseImageBox = styled(Box)({
 export const EarningBox = styled(Box)(({ theme }) => ({
   width: "299px",
   height: "94px",
-  // position: "absolute",
-  // top: "122px",
-  // right: "18px",
   background:
     "linear-gradient(0deg, #FFFFFF, #FFFFFF), radial-gradient(143.86% 887.35% at -10.97% -22.81%, #F9F4ED 0%, #FFFFFF 100%)",
   boxShadow: "0px 4.74877px 17.8079px rgba(211, 182, 107, 0.2)",
@@ -147,12 +147,14 @@ export const EarningBox = styled(Box)(({ theme }) => ({
   },
 }));
 
+export const EarningBoxContent = styled(Box)(({ theme }) => ({
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  paddingTop: "11px",
+}));
+
 export const TitleEaring = styled(Box)({
-  // width: "115px",
-  // height: "21px",
-  // position: "absolute",
-  // top: "11px",
-  // left: "20px",
   fontFamily: "Poppins",
   fontWeight: 500,
   fontSize: "14px",
@@ -163,11 +165,6 @@ export const TitleEaring = styled(Box)({
 });
 
 export const PercentageBox = styled(Box)({
-  // width: "29px",
-  // height: "10px",
-  // position: "absolute",
-  // top: "13px",
-  // right: "16.02px",
   display: "flex",
   paddingRight: "14px",
 });
@@ -185,17 +182,9 @@ export const PercenteNumber = styled(Box)({
 export const UpIcon = styled(Box)({
   width: "5.8px",
   height: "5.15px",
-  // position: "absolute",
-  // right: "0",
-  // top: "-10px",
 });
 
 export const MoneyBox = styled(Box)({
-  // width: "119px",
-  // height: "36px",
-  // position: "absolute",
-  // top: "45px",
-  // left: "19px",
   fontFamily: "Poppins",
   fontWeight: 700,
   fontSize: "24px",
@@ -206,17 +195,11 @@ export const MoneyBox = styled(Box)({
 export const CFBox = styled(Box)({
   width: "496.72px",
   height: "140.4px",
-  // position: "absolute",
-  // top: "12.8px",
-  // left: "-2px",
 });
 
 export const PointIcon = styled(Box)({
   width: "10px",
   height: "10px",
-  // position: "absolute",
-  // top: "29px",
-  // left: "255.98px",
 });
 
 export const VectorOne = styled("img")(({ theme }) => ({
@@ -244,18 +227,11 @@ export const VectorTwo = styled("img")(({ theme }) => ({
 export const AnalisticBox = styled(Box)(({ theme }) => ({
   width: "458px",
   height: "279px",
-  // position: "absolute",
-  // top: "281px",
-  // right: "22px",
   marginTop: "9px",
   background: "#FFFFFF",
   boxShadow: "0px 5px 13px rgba(191, 149, 63, 0.21)",
   borderRadius: "10px",
   padding: "16.12px 9.58px",
-  // display: "flex",
-  // justifyContent: "center",
-  // alignItems: "center",
-  // flexDirection: "column",
 
   [theme.breakpoints.only("xs")]: {
     width: "84%",
@@ -268,11 +244,6 @@ export const ChartOne = styled(Box)({
 });
 
 export const MoneyFlow = styled(Box)({
-  // position: "absolute",
-  // left: "2.99%",
-  // right: "79.11%",
-  // top: "5.78%",
-  // bottom: "86.7%",
   fontFamily: "Poppins",
   fontWeight: 400,
   fontSize: "14px",
@@ -282,13 +253,6 @@ export const MoneyFlow = styled(Box)({
   marginBottom: "12.24px",
 });
 
-export const NavBar = styled(Box)({
-  // position: "absolute",
-  // left: "2.99%",
-  // right: "85.72%",
-  // top: "17.69%",
-  // bottom: "77.29%",
-});
 
 export const FilterButton = styled(Box)({
   boxSizing: "border-box",
@@ -299,21 +263,12 @@ export const FilterButton = styled(Box)({
   gap: "10px",
   width: "54.89px",
   height: "28.2px",
-  // position: "absolute",
   visibility: "hidden",
-  // left: "360.42px",
-  // right: "13.69px",
-  // top: "-9px",
   backgroundColor: "blue",
   borderRadius: "8px",
 });
 
 export const Porcent = styled(Box)({
-  // position: "absolute",
-  // left: "2.99%",
-  // right: "85.72%",
-  // top: "17.69%",
-  // bottom: "77.29%",
   backgroundColor: "white",
   height: "14px",
   width: "51.7px",
@@ -378,7 +333,6 @@ export const Money = styled(Box)({
   gap: "26px",
   position: "absolute",
   left: "0",
-  // right: "94.67%",
   top: "18px",
   bottom: "5.8%",
   width: "11.53px",
@@ -403,8 +357,6 @@ export const Month = styled(Box)(({ theme }) => ({
   position: "absolute",
   left: "7.8%",
   bottom: "-9px",
-  // right: "2.09%",
-  // top: "103.34%",
   width: "394px",
   height: "8.6px",
   [theme.breakpoints.only("xs")]: {
@@ -504,11 +456,8 @@ export const GroupBox = styled(Box)(({ theme }) => ({
 }));
 
 export const Total = styled(Box)(({ theme }) => ({
-  // position: "absolute",
   width: "222px",
   height: "150px",
-  // left: "233px",
-  // top: "584px",
   filter: "drop-shadow(0px 5px 13px rgba(191, 149, 63, 0.21))",
   borderRadius: "12px",
   background:
@@ -525,11 +474,8 @@ export const Total = styled(Box)(({ theme }) => ({
 }));
 
 export const TotalTitle = styled(Box)({
-  // position: "absolute",
   width: "107px",
   height: "21px",
-  // left: "15.23px",
-  // top: "17px",
   paddingTop: "11px",
   fontFamily: "Poppins",
   fontWeight: 500,

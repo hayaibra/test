@@ -15,12 +15,9 @@ import {
   UpIcon,
   MoneyBox,
   CFBox,
-  PointIcon,
   AnalisticBox,
   ChartOne,
   MoneyFlow,
-  NavBar,
-  FilterButton,
   Porcent,
   PorcentValue,
   ChartTwo,
@@ -53,6 +50,8 @@ import {
   FirstBoxContent,
   Boxy,
   AnalisticContent,
+  StatisticBox,
+  EarningBoxContent,
 } from "./Style";
 import Rightbar from "../rightbar/Rightbar";
 
@@ -61,23 +60,9 @@ const Feed = () => {
     <FeedBox>
       <FirstBox>
         <FirstBoxContent>
-          <Boxy
-            sx={{
-              padding: "34px 0 0 0",
-              // position: { xs: "relative", sm: "none" },
-              // left: { xs: "-58px", sm: "0" },
-              // width: { xs: "100%" },
-            }}
-          >
+          <Boxy>
             <TitleBox>Statistics</TitleBox>
-            <Box
-              sx={{
-                display: "flex",
-                marginTop: "19px",
-                paddingLeft: "5px",
-                flexDirection: { xs: "column", sm: "row" },
-              }}
-            >
+            <StatisticBox>
               <UpComingBox>
                 <TitleUpComing>Upcoming Orders</TitleUpComing>
                 <NumberBox>222</NumberBox>
@@ -95,14 +80,7 @@ const Feed = () => {
                 </SecurityImageBox>
               </UpComingBox>
               <EarningBox>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    paddingTop: "11px",
-                  }}
-                >
+                <EarningBoxContent>
                   <TitleEaring>Today’s Earning</TitleEaring>
                   <PercentageBox>
                     <PercenteNumber>+22%</PercenteNumber>
@@ -110,7 +88,7 @@ const Feed = () => {
                       <img src={require("../../images/Shape.png")} />
                     </UpIcon>
                   </PercentageBox>
-                </Box>
+                </EarningBoxContent>
 
                 <MoneyBox>
                   3000 <span style={{ fontWeight: 600 }}>AED</span>
@@ -125,7 +103,7 @@ const Feed = () => {
                   />
                 </CFBox>
               </EarningBox>
-            </Box>
+            </StatisticBox>
           </Boxy>
           <AnalisticContent sx={{ marginTop: "26px" }}>
             <TitleBox sx={{ paddingLeft: { xs: "45px", sm: "3px" } }}>

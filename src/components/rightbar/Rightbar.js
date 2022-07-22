@@ -15,7 +15,6 @@ import {
   TimeBox,
   UserBox,
 } from "./Style";
-import React, { useState } from "react";
 import Calendarr from "./calendar/Calendarr";
 
 const Rightbar = () => {

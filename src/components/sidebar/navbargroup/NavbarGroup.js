@@ -6,7 +6,6 @@ import {
   NavTitle,
   NavTitleDashboard,
 } from "./Style";
-import { Box, Typography } from "@mui/material";
 
 const NavbarGroup = () => {
   return (

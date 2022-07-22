@@ -1,11 +1,3 @@
-import {
-  Box,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-} from "@mui/material";
 import React from "react";
 import NavbarGroup from "./navbargroup/NavbarGroup";
 import {
@@ -23,7 +15,7 @@ const Sidebar = () => {
         <NavbarGroup />
         <SignBox>
           <SignImageBox>
-            <img src={require("../../images/Vector.png")} />
+            <img src={require("../../images/Vector.png")} alt="vector" />
           </SignImageBox>
           <SignTitle>Sign out</SignTitle>
         </SignBox>

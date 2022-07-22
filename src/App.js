@@ -2,8 +2,6 @@ import React from "react";
 import { CssBaseline } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Layout from "./components/layout/Layout";
-import { LocalizationProvider } from "@mui/lab";
-import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import "./App.css";
 
 const outertheme = createTheme({

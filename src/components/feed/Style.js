@@ -52,7 +52,7 @@ export const AnalisticContent = styled(Box)(({ theme }) => ({
   [theme.breakpoints.only("xs")]: {
     width: "100%",
     position: "absolute",
-    top: "43%",
+    top: "44%",
   },
 }));
 

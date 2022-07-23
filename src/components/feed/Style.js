@@ -167,6 +167,8 @@ export const TitleEaring = styled(Box)({
 export const PercentageBox = styled(Box)({
   display: "flex",
   paddingRight: "14px",
+  justifyContent: "center",
+  alignItems: "baseline",
 });
 
 export const PercenteNumber = styled(Box)({
@@ -252,7 +254,6 @@ export const MoneyFlow = styled(Box)({
   width: "88px",
   marginBottom: "12.24px",
 });
-
 
 export const FilterButton = styled(Box)({
   boxSizing: "border-box",
